@@ -174,6 +174,43 @@
   a:focus-visible {
     color: var(--clr-text-brand-light);
   }
+
+  img {
+    border-radius: var(--border-radius-lg);
+  }
+}
+
+@layer layout {
+  .section {
+    padding-block: 3.75rem;
+
+    @media (width > 760px) {
+      padding-block: 8rem;
+    }
+  }
+
+  .section--compact {
+    @media (width > 760px) {
+      padding-block: 4.5rem;
+    }
+  }
+
+  .wrapper {
+    --wrapper-max-width: 1130px;
+
+    max-width: var(--wrapper-max-width);
+    margin-inline: auto;
+    padding-inline: 1rem;
+    box-sizing: content-box;
+  }
+
+  .wrapper-wide {
+    --wrapper-max-width: 1130px;
+  }
+
+  .wrapper-narrow {
+    --wrapper-max-width: 720px;
+  }
 }
 
 @layer utilities {
@@ -185,5 +222,73 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-main {
+    color: var(--clr-text-main);
+  }
+
+  .text-high-contrast {
+    color: var(--clr-text-high-contrast);
+  }
+
+  .text-brand {
+    color: var(--clr-text-brand);
+  }
+
+  .text-brand-light {
+    color: var(--clr-text-brand-light);
+  }
+
+  .bg-accent-light {
+    background-color: var(--background-accent-light);
+  }
+
+  .bg-accent {
+    background-color: var(--background-accent-dark);
+  }
+
+  .bg-extra-light {
+    background-color: var(--background-extra-light);
+  }
+
+  .bg-light {
+    background-color: var(--background-light);
+  }
+
+  .bg-main {
+    background-color: var(--background-main);
+  }
+
+  .bg-dark {
+    background-color: var(--background-dark);
+  }
+
+  .bg-extra-dark {
+    background-color: var(--background-extra-dark);
+  }
+
+  .section-title {
+    font-size: var(--font-size-heading-regular);
+  }
+
+  .font-size-sm {
+    font-size: var(--font-size-sm);
+  }
+
+  .font-size-regular {
+    font-size: var(--font-size-regular);
+  }
+
+  .font-size-md {
+    font-size: var(--font-size-md);
+  }
+
+  .font-size-lg {
+    font-size: var(--font-size-lg);
   }
 }
